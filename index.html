@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=1024" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <title>Presentation Starter</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Merriweather">
     <link rel="stylesheet" href="https://use.fontawesome.com/055625cf79.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/styles/atom-one-light.min.css" integrity="sha256-aw9uGjVU5OJyMYN70Vu2kZ1DDVc1slcJCS2XvuPCPKo=" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
   </head>
   <body class="impress-not-supported">
@@ -15,26 +16,38 @@
       <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
     </div>
     <div id="impress">
-      <div class="step" style="width: 400px; height: 200px; font-size: 2em;" data-x="-1600" data-y="-1200" data-scale="1">
+      <div id="cover" class="step aligned center" data-x="-5000" data-y="-3000" data-scale="4">
         <h1>Hello World</h1>
       </div>
-      <div class="step" style="width: 400px; height:300px; border-radius: 20px; border: 1px solid black; padding: 1em;" data-x="-2000" data-y="-600" data-scale="1">
+      <div class="step aligned center" data-x="-1000" data-y="-3000" data-scale="1">
         <h1>Say Hello</h1>
       </div>
-      <div class="step" style="width: 400px; height:300px; border-radius: 20px; border: 1px solid black; padding: 1em;" data-x="-1000" data-y="-600" data-scale="1">
+      <div class="step aligned center" data-x="500" data-y="-3000" data-scale="1">
         <h1>What's next?</h1>
       </div>
-      <div class="step" style="width: 240px;" data-x="2048" data-y="1200" data-scale="4">
-        <h1>K.K. POON</h1>
-        <ul class="fa-ul" style="margin-left: 0">
-          <li><i class="fa fa-2x fa-github" aria-hidden="true"></i> github.com/kkpoon</li>
-          <li><i class="fa fa-2x fa-twitter" aria-hidden="true"></i> @kkpoon</li>
+      <div class="step aligned center" data-x="2000" data-y="-3000" data-scale="1">
+        <h2>Some Code</h2>
+        <pre><code class="elm">
+import Html exposing (text)
+
+main =
+  text "Hello, World!"
+        </code></pre>
+      </div>
+      <div class="step" data-x="5500" data-y="3000" data-scale="3">
+        <h2>K.K. POON</h2>
+        <ul class="fa-ul">
+          <li><i class="fa fa-2x fa-fw fa-middle fa-github" aria-hidden="true"></i> github.com/kkpoon</li>
+          <li><i class="fa fa-2x fa-fw fa-middle fa-twitter" aria-hidden="true"></i> @kkpoon</li>
         </ul>
       </div>
-      <div class="step" dast-x="0" data-y="0" data-scale="4">
+      <div class="step" dast-x="0" data-y="0" data-scale="10">
       </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/impress.js/0.5.3/impress.min.js" integrity="sha256-3f6y6afUIv9aA1rhMR8WDR802B5XZh5l9z1WDXqp5bA=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/highlight.min.js" integrity="sha256-3SFEu3qBPVRitcXI7ITnBKtwkYmoqF7ap4xI5dEexaY=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.10.0/languages/elm.min.js" integrity="sha256-cI1xiiNn9/uOE9r1jsvpehwxqImieM4sK06tzr+r4YU=" crossorigin="anonymous"></script>
     <script>impress().init();</script>
+    <script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>
