@@ -6,8 +6,12 @@ ul {
   text-align: left;
 }
 
-#cover {
-  font-family: 'Merriweather', sans-serif;
+code {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.headline {
+  font-family: 'Roboto Slab', serif;
 }
 
 .step {
