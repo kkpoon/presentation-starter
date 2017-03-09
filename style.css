@@ -8,20 +8,22 @@ ul {
 
 code {
   font-family: 'Roboto Mono', monospace;
+  text-align: left;
+  font-size: 36px;
 }
 
-.headline {
+h1, h2, h3, h4, h5, h6, h7 {
   font-family: 'Roboto Slab', serif;
+}
+
+p {
+  text-align: left;
+  font-size: 36px;
 }
 
 .step {
   width: 900px;
   font-size: 48px;
-}
-
-.step > pre > code {
-  text-align: left;
-  font-size: 36px;
 }
 
 .aligned.center {
@@ -32,8 +34,8 @@ code {
   display: none;
 }
 
-.impress-not-supported #impress {
-  display: none;
+ul.fa-ul {
+  margin-left: 0;
 }
 
 .fa-middle {
